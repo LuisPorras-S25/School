@@ -1,0 +1,115 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+
+    
+    background-image: url(Img/Diseño\ sin\ título.gif);
+    background-size: 100vw, 100vw;
+    background-attachment: fixed; /*Fijar la imagen en la pantalla para que no se mueva con el scroll*/
+
+}
+
+h1{
+    color: rgb(161, 139, 139);
+    text-align: center;
+}
+
+.Galeria{
+    list-style: none;
+    width: 90%;
+    margin: auto; /*Para que automaticamente se corra practicamente al centro*/
+    padding: 20px; /*borde que esta entre el inicio y la imagen*/
+    box-sizing: border-box; /*Me aplique el padding del borde hacia adentro, no externamente*/
+    display: flex; /*Verlo flexible, para que se acomode*/
+    flex-wrap: wrap; /*Que se encoja la imagen junto con la página*/
+    justify-content: space-around ; /*Justifique el contenido en el espacio que haya*/
+
+}
+
+.Galeria li{
+    margin: 5px; /*Todos los margenes sean de 5px*/
+}
+
+.Galeria img{
+    width: 200px;
+    height: 100px;
+}
+
+/*Ahora trabajaremos el modal, para ofrecer un menú y ver todas las imágenes:*/
+
+.Modal{
+    display: none;
+}
+
+
+.Modal:target{ /*Es una opcion para indicar que suceda algo cuando de click*/
+
+    display: block;
+    position:fixed;
+    background: black;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+
+}
+
+
+.Modal h3{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+    margin: 15px 0;
+}
+
+.imagen{
+    width: 100%;
+    height: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen a{
+    color: white;
+    font-size: 40px;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.imagen a:nth-child(2){
+    margin: 0;
+    height: 100%;
+    flex-shrink: 2;/*Si lo demás se corre, se devuelve 2 menos*/
+}
+
+.imagen img{
+    width: 500px;
+    height: 100%;
+    max-width: 100%; /*Se acomoda a un máximo de 100 si la pagina se encoje, que siempre mantenga ese mismo ancho*/
+    border:7px solid rgb(216, 130, 0);
+    box-sizing: border-box;
+
+}
+
+.cerrar{
+
+    display: block;
+    background:white;
+    width: 25px;
+    height: 25px;
+    margin: 10px auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color:black;
+    padding: 5px;
+    border-radius: 50%;
+    line-height: 25px;/*línea de alto, para que la x se centre más*/
+
+}
+

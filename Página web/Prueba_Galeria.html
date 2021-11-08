@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Styles_Prueba_Galeria.css">
+    <title>Ejemplo de Galería</title>
+</head>
+<body>
+
+
+    <!--Agregar todo dentro de un section: para tener la galería y así modificarlo-->
+    <!--Para tener un atajo de hacer listas: .ul>li*4>a>img-->
+    <section>
+        <h1>Galería de Productos</h1>
+
+        <ul class="Galeria">
+
+            <li><a href="#Img1"><img src="Img/Acerca de1.jpeg" alt=""></a></li>
+            <li><a href="#Img2"><img src="Img/Acerca de 2.jpeg" alt=""></a></li>
+            <li><a href="#Img3"><img src="Img/Acerca de3.jpeg" alt=""></a></li>
+            <li><a href="#Img4"><img src="Img/Cargador1.jpg" alt=""></a></li>
+
+        </ul>
+
+        <div class="Modal" id="Img1">
+            <h3>Tester</h3>
+
+            <div class="imagen" >
+
+                <a href="#Img4">&#60</a>
+                <a href=""><img src="Img/Acerca de1.jpeg" alt=""></a>
+                <a href="#Img2">></a>
+
+            </div>
+
+            <!--Hacer el boton de salir-->
+            <a class="cerrar" href="">x</a>
+
+        </div>
+
+        <div class="Modal" id="Img2">
+            <h3>Tester</h3>
+
+            <div class="imagen" >
+
+                <a href="#Img1">&#60</a>
+                <a href=""><img src="Img/Acerca de 2.jpeg" alt=""></a>
+                <a href="#Img2">></a>
+
+            </div>
+
+            <!--Hacer el boton de salir-->
+            <a class="cerrar" href="">x</a>
+
+        </div>
+
+    </section>
+
+
+
+    
+
+    
+
+    
+</body>
+</html>
